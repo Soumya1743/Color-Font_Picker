@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Color & Text Picker</title>
+    <title>Color & Font Picker</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 </head>
 <body id="body">
     <h1 class="heading"><i>COLOR & FONT PICKER</i></h1>
     <div class="container">
         <div id="container1">
             <div id="text_box">
-                <input type="text" id="type_here">
+                <!-- <textarea id="type_here" placeholder="Type here"></textarea> -->
+                <h2 contenteditable="true" id="type_here" style="font-weight: 500;"></h2>
             </div>
             <button id="download">Download</button>
         </div>
@@ -53,7 +55,7 @@
                     </div>
                 </div>
                 <div id="div2">
-                    <h3 class="color_heading"><i>COLOR</i></h3>
+                    <h3 class="color_heading"><i>TEXT-COLOR</i></h3>
                     <div id="colors2">
                         <div class="colors" id="color1" style="background-color: red;"></div>
                         <div class="colors" id="color2" style="background-color: green;"></div>

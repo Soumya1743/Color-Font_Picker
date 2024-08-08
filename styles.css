@@ -9,15 +9,14 @@
 }
 .container{
     display: inline-block;
-    width: 100%;
 }
 #container1{
-    display: inline-block;
+    float: left;
     height: 700px;
     width: 40%;
 }
 #container2{
-    display: inline-block;
+    float: right;
     height: 700px;
     width: 59%;
     vertical-align: top;
@@ -29,14 +28,14 @@
     margin-top: 5%;
     background-color: white;
     border-radius: 20px;
-    border-bottom: 8px solid gray;
-    border-right: 10px solid gray;
+    border: none;
+    border-top: 3px solid gray;
+    border-left: 3px solid gray;
 }
 #text_box:hover{
-    /* box-shadow: 0px 0px 50px gray; */
     border: none;
-    border-top: 7px solid gray;
-    border-left: 7px solid gray;
+    border-bottom: 3px solid gray;
+    border-right: 3px solid gray; 
 }
 #type_here{
     height:100%;
@@ -44,10 +43,24 @@
     text-align: center;
     border-radius: 20px;
     font-size: 200%;
-    border: none;
     background-color: white;
     color: black;
     font-family: 'Times New Roman', Times, serif;
+    border: none;
+}
+#text_box h2{
+    height: 100%;
+    width: 100%;
+    margin-top: 0;
+    border-radius: 20px;
+    align-content: center;
+    text-align: center;
+    font-size: 200%;
+    outline: none; 
+    
+}
+#type_here:hover{
+    outline: none;
 }
 #download{
     height: 8%;
@@ -76,11 +89,12 @@
     width: 100%;
     background-color: white;
     border-radius: 10px;
-    display: inline-block;
+    float: left;
     border-bottom: 3px solid gray;
     border-left: 3px solid gray;
 }
 #sub_container2{
+    float: right;
     height: 49.9%;
     width: 100%;
     background-color: white;
@@ -186,11 +200,9 @@
     letter-spacing: 5px;
 }
 .font_style:hover{
-    height: 19%;
     width: 17%;
     background-color: black;
     color: white;
     border-bottom: 4px solid red;
     border-right: 4px solid green;
 }
-

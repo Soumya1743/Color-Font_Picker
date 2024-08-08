@@ -5,6 +5,7 @@ let style = document.getElementsByClassName('font_style');
 
 bgcolors[0].addEventListener('click', () =>{
     type_here.style.backgroundColor = "red";
+    bgcolors[0].style.border = "1px solid black";
 });
 bgcolors[1].addEventListener('click', () =>{
     type_here.style.backgroundColor = "green";
@@ -232,3 +233,31 @@ style[13].addEventListener('click', () =>{
 style[14].addEventListener('click', () =>{
     type_here.style.fontFamily = "Times";
 });
+
+
+let d = document.getElementById('download');
+d.addEventListener('click', download_image);
+function download_image(){
+    html2canvas(document.getElementById('text_box')).then(canvas=>{
+        const link = document.createElement('a');
+        link.href = canvas.toDataURL('image/png');
+        link.download = 'image.png';
+        link.click();
+    });
+}
+
+
+
+// let text_box = document.getElementById('text_box');
+
+// let div = document.createElement('div');
+// container1.appendChild(div);
+// div.id = "type_here";
+
+
+// let aa = document.createElement('h2');
+// text.appendChild(aa);
+// aa.innerHTML = text_box.value;
+// aa.style.alignContent = "center";
+// aa.style.verticalAlign = "middle";
+// aa.id = "last";
